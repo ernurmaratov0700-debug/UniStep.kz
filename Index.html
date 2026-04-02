@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniStep Platform</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>🎓 UniStep</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Сабақ кестесі</a>
+    <a href="#">GPA калькулятор</a>
+    <a href="#">Дедлайн</a>
+    <a href="#">AI Кеңесші</a>
+</div>
+
+<div class="main">
+    <h1>Қош келдің!</h1>
+
+    <div class="card">
+        <h3>📅 Келесі сабақ</h3>
+        <p>Математика — 302 аудитория — 15:00</p>
+    </div>
+
+    <div class="card">
+        <h3>📊 GPA Калькулятор</h3>
+        <input type="number" id="grade" placeholder="Баға (0-100)">
+        <input type="number" id="credit" placeholder="Кредит">
+        <button onclick="calculateGPA()">Есептеу</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="card">
+        <h3>⏰ Дедлайн</h3>
+        <p>Физика СӨЖ — 2 күн қалды</p>
+    </div>
+
+    <div class="card">
+        <h3>🤖 AI Кеңесші</h3>
+        <button onclick="getAdvice()">Кеңес алу</button>
+        <p id="aiResult"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
